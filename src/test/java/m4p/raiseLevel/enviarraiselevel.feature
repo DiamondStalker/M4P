@@ -2,10 +2,6 @@ Feature: Validar acumulador con raise.level y validar DB
 
   Background:
 
-    # Lista con telefono, uuid final y monto esperado de acumulado
-    * def validaciones = read('classpath:m4p/raiselevel.json')
-
-
     * def natsAdmin =  baseUrls.natsAdmin
     * def userNameDB = database.username
     * def passDB = database.passDB
@@ -37,8 +33,8 @@ Feature: Validar acumulador con raise.level y validar DB
 
     # Query the PostgreSQL database
     * def dbConfig = {username: '#(userNameDB)',password: '#(passDB)',url: '#(urlDb)'}
-    * def dbQuery = `   select * from raise_level.offer_registration where service_number  like '${SUBSCRIBER_NUMBER}'`
-    * def response = karate.call('classpath:org/example/postgresql.feature', { dbConfig: dbConfig, dbQuery: dbQuery })
+    * def dbQuery = `   SELECT * FROM logger.tbl_multi_subject where transaction_id = '${UUID}' and subject = 'nebula.supplyBonus'`
+    * def response = karate.call('../../utils/postgresql.feature', { dbConfig: dbConfig, dbQuery: dbQuery })
 
     # * print result
     * print " ======== Result DB <SUBSCRIBER_NUMBER> ======== "
@@ -52,4 +48,4 @@ Feature: Validar acumulador con raise.level y validar DB
 
 
     Examples:
-      | validaciones |
+      | read('classpath:m4p/raiselevel.json') |

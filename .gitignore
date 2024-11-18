@@ -5,8 +5,14 @@ build/
 !**/src/test/**/build/
 karate-config.js
 
-/target/
+/target/**
 /logs
+
+!/target/reports
+!/target/surefire-reports
+!/target/test-classes
+
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
