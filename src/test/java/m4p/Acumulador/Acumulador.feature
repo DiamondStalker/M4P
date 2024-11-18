@@ -5,6 +5,8 @@ Feature: Validar acumulador con raise.level y validar DB
     * def dbConfig = {username: '#(database.username)',password: '#(database.passDB)',url: '#(database.url)'}
     * def natsAdmin =  baseUrls.natsAdmin
 
+    # def dbConfigs = karate.get('database')
+
     * def date =
     """
     (()=>{
@@ -15,7 +17,7 @@ Feature: Validar acumulador con raise.level y validar DB
     })()
     """
 
-
+ #CompraPquete
   @CompraPaquete
   Scenario Outline: Realizando compra paquete de <Recarga> para el numero <SUBSCRIBER_NUMBER>
 
@@ -42,6 +44,7 @@ Feature: Validar acumulador con raise.level y validar DB
     Examples:
       | read('classpath:m4p/SetDatos.json') |
 
+    #ValidarCantidadRegistros
   @validaCantidadRegistros
   Scenario Outline: Validacion  DB para el numero <SUBSCRIBER_NUMBER> para el transaction_id <UUID>
 
@@ -61,7 +64,7 @@ Feature: Validar acumulador con raise.level y validar DB
     Examples:
       | read('classpath:m4p/UUIDRiseLevel.json') |
 
-
+  #validaMontoAcumulado
   @validaMontoAcumulado
   Scenario Outline: Validacion DB MUltiSubject para el numero <SUBSCRIBER_NUMBER> para el transaction_id <UUID>
 
@@ -80,7 +83,7 @@ Feature: Validar acumulador con raise.level y validar DB
       | read('classpath:m4p/UUIDRiseLevel.json') |
 
 
-#    Realizar una limpieza a DB
+  # LimpiezaDB
   @LimpiezaDB
   Scenario: Limpieza de resgistros en la DB
     * def executeQuery =
@@ -98,7 +101,6 @@ Feature: Validar acumulador con raise.level y validar DB
 
     * def dbQueryBono = `DELETE FROM raise_level.offer_registration WHERE service_number like '%315861794%'`
     * def responseBono = executeQuery(dbQueryBono)
-
 
     # Nuevas validaciones
 

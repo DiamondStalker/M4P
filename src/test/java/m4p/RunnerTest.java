@@ -16,15 +16,7 @@ public class RunnerTest {
     public Karate CantidadRegistros() {
         return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
                 .tags("@validaCantidadRegistros")
-                .reportDir("target/karate-reports-valida-registros")
-                .relativeTo(getClass());
-    }
-
-    @Karate.Test
-    public Karate Limpieza() {
-        return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
-                .tags("@LimpiezaDB")
-                .reportDir("target/karate-reports-valida-registros")
+                .reportDir("target/ValidarCantidadRegistros")
                 .relativeTo(getClass());
     }
 
@@ -36,6 +28,12 @@ public class RunnerTest {
                 .relativeTo(getClass());
     }
 
+   @Karate.Test
+    public Karate Limpieza() {
+        return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
+                .tags("@LimpiezaDB");
+    }
+
     @Karate.Test
     public Karate FechasCorte() {
         return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
@@ -43,5 +41,4 @@ public class RunnerTest {
                 .reportDir("target/FechaCorte")
                 .relativeTo(getClass());
     }
-
 }
