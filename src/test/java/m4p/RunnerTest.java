@@ -42,11 +42,11 @@ public class RunnerTest {
                 .relativeTo(getClass());
     }
 
-    //@Karate.Test
+    @Karate.Test
     public Karate Acumulador() {
         return Karate.run("classpath:m4p/Acumulador.feature")
                 .tags("@validaMontoAcumulado")
-                .reportDir("target/karate-reports-valida-registros")
+                .reportDir("target/Acumulaodor")
                 .relativeTo(getClass());
     }
 
