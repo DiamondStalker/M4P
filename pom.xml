@@ -95,6 +95,8 @@
                 </excludes>
             </testResource>
         </testResources>
+
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -111,11 +113,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <redirectTestOutputToFile>false</redirectTestOutputToFile>
-                    <printSummary>true</printSummary>
-                    <trimStackTrace>true</trimStackTrace>
-                    <forkCount>1</forkCount>
-                    <reuseForks>true</reuseForks>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
         </plugins>
