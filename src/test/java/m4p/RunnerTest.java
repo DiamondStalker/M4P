@@ -4,11 +4,12 @@ import com.intuit.karate.junit5.Karate;
 
 
 public class RunnerTest {
+
     @Karate.Test
     public Karate CompraPaquete() {
         return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
                 .tags("@CompraPaquete")
-                .reportDir("target/karate-reports-compra-paquete")
+                .reportDir("target/CompraPaquete")
                 .relativeTo(getClass());
     }
 

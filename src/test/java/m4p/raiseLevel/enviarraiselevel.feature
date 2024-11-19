@@ -19,7 +19,7 @@ Feature: Validar acumulador con raise.level y validar DB
     {
       "subject": "nebula.raiseLevel",
       "message": {
-        "date": 1731619108.000000000,
+        "date": ,
         "serviceNumber": <SUBSCRIBER_NUMBER>,
         "totalAmount": <Acumulado>,
         "transactionId": <UUID>

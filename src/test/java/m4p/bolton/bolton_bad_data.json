@@ -1,0 +1,29 @@
+[
+  {
+    "appId": "FSTUIO",
+    "appInfoReference": "testing",
+    "userCode": "S2T_7",
+    "opCost": 0,
+    "subscriberNumber": "3163582491",
+    "boltonCode": "BIT3",
+    "amount": 90
+  },
+  {
+    "appId": "FST",
+    "appInfoReference": "testing",
+    "userCode": "S2T_7",
+    "opCost": 0,
+    "subscriberNumber": "3138843526",
+    "boltonCode": "BIT3",
+    "amount": 90
+  },
+  {
+    "appId": "FST",
+    "appInfoReference": "testing",
+    "userCode": "S2T_7",
+    "opCost": 0,
+    "subscriberNumber": "3163582491",
+    "boltonCode": "XIM4",
+    "amount": 90
+  }
+]

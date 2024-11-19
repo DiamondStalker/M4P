@@ -1,38 +1,35 @@
 [
   {
+    "transactionId": "1d33610d-7b7a-47ce-88f5-0aec7102a64b",
     "appId": "FST",
     "appInfoReference": "testing",
     "userCode": "S2T_7",
     "opCost": 0,
     "subscriberNumber": "3163582491",
     "boltonCode": "BIT3",
-    "amount": 90
+    "amount": 90,
+    "Validacion": "opReference"
   },
   {
+    "transactionId": "2d33610d-7b7a-47ce-88f5-0aec7102a64b",
     "appId": "FST",
     "appInfoReference": "testing",
     "userCode": "S2T_7",
     "opCost": 0,
-    "subscriberNumber": "3167253288",
-    "boltonCode": "BIT3",
-    "amount": 40
+    "subscriberNumber": "3163582493",
+    "boltonCode": "COMB24",
+    "amount": 20,
+    "Validacion": "opReference"
   },
   {
+    "transactionId": "3d33610d-7b7a-47ce-88f5-0aec7102a64b",
     "appId": "FST",
     "appInfoReference": "testing",
     "userCode": "S2T_7",
     "opCost": 0,
     "subscriberNumber": "3163582491",
-    "boltonCode": "BIT3",
-    "amount": 10
-  },
-  {
-    "appId": "FST",
-    "appInfoReference": "testing",
-    "userCode": "S2T_7",
-    "opCost": 0,
-    "subscriberNumber": "3158617949",
-    "boltonCode": "BIT3",
-    "amount": 25
+    "boltonCode": "AX87x",
+    "amount": 10,
+    "Validacion": "error"
   }
 ]
