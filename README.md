@@ -13,7 +13,7 @@ git clone https://github.com/DiamondStalker/m4p.git
 Usar **_SIEMPRE_** antes de ejecutar alguna extraccion el comando:
 
 ```bash
-git pull origin main
+git pull origin master
 ```
 ## Contributing
 
