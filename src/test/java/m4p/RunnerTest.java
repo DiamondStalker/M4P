@@ -42,4 +42,10 @@ public class RunnerTest {
                 .reportDir("target/FechaCorte")
                 .relativeTo(getClass());
     }
+
+    @Karate.Test
+    public Karate Limpieza2() {
+        return Karate.run("classpath:m4p/Acumulador/Acumulador.feature")
+                .tags("@LimpiezaDB");
+    }
 }
