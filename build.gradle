@@ -14,6 +14,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation "com.intuit.karate:karate-junit5:1.0.0"
     implementation 'org.postgresql:postgresql:42.7.2'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
 }
 
 sourceSets {
